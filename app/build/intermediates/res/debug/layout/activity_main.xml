@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/scan_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="Search Devices" />
+
+    
+    <TextView 
+        android:id="@+id/device_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scan_devices"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+    
+
+    <TextView 
+        android:id="@+id/device_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_name"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+    
+    <Button
+        android:id="@+id/connect_devices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_address"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dip"
+        android:text="Connect Devices" />
+    
+    <TextView 
+        android:id="@+id/connection_attempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connect_devices"
+        android:layout_centerHorizontal="true"
+        android:text=""/>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/connection_attempt"
+        android:layout_marginTop="29dp"
+        android:height="42dp"
+        android:ellipsize="marquee"
+        android:padding="5dip"
+        android:textSize="30sp"
+         />
+
+</RelativeLayout><!-- From: file:/C:/Users/Malvin/Desktop/Wifi_Direct_PDF_Sharing_Reader/app/src/main/res/layout/activity_main.xml -->
